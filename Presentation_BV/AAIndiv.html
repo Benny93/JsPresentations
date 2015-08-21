@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-16">
+
+		<title>Automatische Individualisierung eines Avatars mit Hilfe von optischem Tracking</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<meta name="description" content="info slides for the 3rd assignment for the Unity Praktikum in SS15">
+		<meta name="author" content="Johannes">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+		
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<!--script>
+		  if( window.location.search.match( /print-pdf/gi ) ) {
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		  }
+		</script-->
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+		
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/ember.css" id="theme">
+		<style type="text/css">
+
+			.listheader
+            {
+                margin-bottom:1px;margin-top:1px;text-align:left;
+            }
+
+            .info
+            {
+                font-size:18px;margin-top:1px;text-align:left;
+            }
+            
+            .runninginfo
+            {
+                font-size:18px;margin-top:1px;text-align:left;left-margin:10px;color:#B4A069;
+            }
+            
+            .container {
+            	background: rgba(180,160,105,0.5);
+			    margin:20px auto;
+			    padding:20px auto;
+			    position:relative;
+			    width:800px auto;
+			
+			    border-radius:5px;
+			    -moz-border-radius:5px;
+			    -webkit-border-radius:5px;
+			
+			    box-shadow:5px 5px 25px rgba(180,160,105,0.5);
+			
+			    column-count: 2;
+			    column-gap: 3em;
+			    column-rule: 1px dashed #B4A069;
+			    -moz-column-count: 2;
+			    -moz-column-gap: 3em;
+			    -moz-column-rule: 1px dashed #B4A069;
+			    -webkit-column-count: 2;
+			    -webkit-column-gap: 3em;
+			    -webkit-column-rule: 1px dashed #B4A069;
+			}
+        </style>
+        
+	</head>
+
+	<body>
+        
+		<div class="reveal"> 
+                
+			<div class="slides" >
+                
+			<!--Every Section is a slide -->
+				<section data-background="">
+            		<h3 class="whiteTextBV"> Bachelor Arbeit - Informatik</h3>
+                    <h2 class="orange">Automatische Individualisierung eines Avatars mit Hilfe von optischem Tracking</h2>
+					<h1>Benjamin Vollmer</h1>
+				</section>
+				
+				
+                    
+                    <section>
+                        <h2 style="font-style: oblique; ">Warum individualisierte Avatare?</h2>
+                        <ul class="normalItemList">
+                            <li>Virtual Reality im Trend!</li>                            
+                            <li>Avatare verbessern Interaktion (Integration)</li>
+                            <li>Immersiveres Erleben</li>                            
+                            <li>Einfach und ohne großen Aufwand!</li>
+                            
+                        </ul>
+                    </section>
+				
+					<section>
+						<h2> Gliederung </h2>
+						
+						<hr class="horizontalRow" />
+                        <div class="circleBV" id=circleBVStyle></div>
+						<ul class="normalItemList">
+							<li> Theorie und Technologie
+                               <!--
+                                <ul class="subNormalList">
+                                    <li>Unity3D</li>
+                                    <li>MakeHuman</li>
+                                    <li>Kinect</li>                                    
+                                    </ul>-->
+                            </li>
+
+							<li> Herausforderung und Implementierung </li>
+                            <li> Live Demo </li>
+							<li> Fazit </li>
+						</ul>
+						
+						<!--End Gliederung-->
+				    	
+                </section>
+				<section>	
+                    <section>
+                        <h2>Theorie und Technologie</h2>
+                        <hr class="horizontalRow" />
+                        <div class="circleBV" id=circleBVStyle></div>
+						<ul class="alternateList">
+							<li class="orange"> Unity3d</li>
+
+							<li> MakeHuman </li>
+                            <li> Kinect und ZigFu </li>
+							
+						</ul>
+                    </section>
+                    <section>
+                        <img class="normalimage" width="200px" src="images/unity/unitylogo.png">
+                        <h2>Unity3D</h2>
+                        <ul class="alternateList">
+							<li> Game-Engine</li>
+                            
+							<li> Multi-Plattform </li>
+                            <li> Einfache Anbindung externer Hardware </li>							
+						</ul>
+                    </section>
+				</section><!--Ende Technologien-->
+				
+				<section>
+				<!--  section data-background="images/logos/logo_combined.png"-->
+						<h1>Merci für's Zuhören.</h1>
+				</section>
+			</div>
+
+		</div>
+            
+    
+                <!--Ende der slides -->
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				//theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+                
+				parallaxBackgroundImage: "images/KinectWallpaper.png",
+				parallaxBackgroundSize: '2560px 1440px',
+				
+				leap: {
+					naturalSwipe   : false,    // Invert swipe gestures
+					pointerOpacity : 0.5,      // Set pointer opacity to 0.5
+					pointerColor   : '#d80000' // Red pointer
+				},
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/leap/leap.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
