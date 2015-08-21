@@ -187,8 +187,9 @@ background-color: transparent !important;
     box-shadow: none!important;
 }
 
-.floatrightinimage{
+.floatrightinslide{
 float: right;
+    clear: both;
 }
 .circleBV {
 	border-radius: 50%;
