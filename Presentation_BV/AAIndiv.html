@@ -315,7 +315,83 @@
                             <li>Individualisierte Proportionen</li>
                             </ul>
                     </section>
-                    
+                    <section>
+                            <h3>Individualisierte Textur</h3>
+                            <h1 class="orange">Der Avatar soll dem Nutzer ähnlich sehen.</h1>
+                            <h1>Er soll am Oberkörper das gleiche Kleidungsstück tragen.</h1>
+                    </section>
+                    <section>
+                            <h3>Individualisierte Textur</h3>
+                            <h1>Nötige Schritte:</h1>
+                            <ul class="normalItemList">
+                            <li>Mit der Kinect eine Aufnahme des Nutzers machen</li>
+                                <li>Ausschnitt dieser Aufnahme wählen</li>
+                                <li>Diesen auf dem Oberkörper des Avatars anzeigen</li>                        
+                            </ul>
+                            
+                    </section>
+                    <section>
+                            <h3>Individualisierte Textur</h3>
+                            <h1 class="orange">Vorbereitung</h1>
+                            <h1 class="orange">Anpassen den UV-Mappings</h1>
+                            <!--Bilder von original -->
+                        <div style="height: 200px;float:left;">
+                            <img height="200px" class="normalimage" style="float:left;margin-top: 0;" src="images/makehuman/mhAvatar.jpg">
+                            <img height="200px" class="normalimage" style="float:left;margin-top: 0;" src="images/makehuman/Pixelmatching.png">
+                            
+                            <span>Original UV-Unwrap des MakeHuman Avatar</span>     
+                        </div>        
+                        <div style="height: 200px;float:left;margin-top: 20px;">                            
+                            <img  style="float:left; margin-top:0px;" height="200px" class="normalimage" src="images/makehuman/texnewmap.png">                                      <span>Vereinfachter UV-Unwrap des MakeHuman Avatar</span>     
+                        </div>
+                    </section> 
+                    <section>
+                        <h3>Individualisierte Textur</h3>
+                        <h1 class="orange">Aufnahme mit der Kinect</h1>
+                        <ul class="normalItemList">
+                            <li>Über RGB-Farbstrom Bild aufnehmen</li>
+                            <li>Über Teifeninformation Hintergrund entfernen</li> 
+                            <li>Als neue Textur für den Oberkörper-Mesh speichern</li>
+                        </ul>
+                        <div style="margin-top:20px;">
+                            <img height="300px" class="normalimage" src="images/AAindiv/texbefore4.png">
+                        </div>
+                    </section> 
+                    <section>
+                        <h3>Individualisierte Textur</h3>
+                        <h1 class="orange">Problem: Schwarze Ränder sichtbar</h1>
+                        <ul class="alternateList">
+                            <li>Die Maske schneidet den Hintergrund mit aus</li>
+                            <li>Abhängig von der Position des Nutzers</li>
+                        </ul>
+                        
+                        <h1 style="margin-top: 20px;" class="orange">Lösung: Position der Aufnahme durch Verschieben und Skalieren optimiren</h1>
+                        <h1>Verwende dazu CMAES</h1>
+                    </section>
+                    <section>
+                        <h3>Individualisierte Textur</h3>
+                        <h1>CMAES Optimierung</h1>
+                        <div>
+                        <img style="float:left; " src="images/AAindiv/cmaesontex2.png" height="300px" class="normalimage">
+                         <h1 style="margin-bottom: 0px;" class="orange">CMAES</h1>
+                            <ul class="alternateList">
+                                <li>3 Paramter für Verschiebung und Skalierung</li>
+                                <li>Maximal 300 Iterationen</li>                                
+                            </ul>
+                        </div>    
+                    </section>
+                    <section>
+                        <h3>Individualisierte Textur</h3>
+                        <h1 class="orange">Ergebnis CMAES</h1>
+                        <ul class="normalItemList">
+                            <li>Kaum noch sichtbare schwarze Ränder</li>
+                            <li>Textur wird fertig auf dem Avatar angezeigt</li> 
+                            <li>Individuelle Texturierung abgeschlossen</li>
+                        </ul>
+                        <div style="margin-top:20px;">
+                            <img height="300px" class="normalimage" src="images/AAindiv/texafter4.png">
+                        </div>
+                    </section>                    
                 </section><!--Ende Textur-->
                 
                 <section><!--Proportions -->
@@ -349,7 +425,7 @@
                 
                  <!--Fazit -->
                     <section>
-                    <h2>Fazit</h2>
+                        <h2>Fazit</h2>
                             <hr class="horizontalRow" />
                             <div class="circleBV" id=circleBVStyle></div>
                             <h1>Probleme:</h1>
@@ -384,11 +460,12 @@
 				<section>
 				<!--  section data-background="images/logos/logo_combined.png"-->
 						<h3 class="animated infinite pulse">Merci für's Zuhören.</h3>
-                    <h1>Bild-Quellen</h1>
-                    <ul>
-                        <li>Unity Logo Zugriff am 21.8.2015: <a href="http://programmybesplatno.com/wp-content/uploads/2014/04/Unity-3D-logo.jpg"> programmybesplatno.com</a> </li>
-                        <li></li>
-                        
+                    <h1 style="margin-top:20px;">Bild-Quellen</h1>
+                    <ul class="compactList">
+                        <li>Unity Logo 1 Zugriff am 21.8.2015: <a href="http://programmybesplatno.com/wp-content/uploads/2014/04/Unity-3D-logo.jpg"> www.programmybesplatno.com</a> </li>                        
+                        <li>Unitylogo 2 Zugriff am 21.8.2015: <a href="http://www.ingame.de/wp-content/blogs.dir/1/files/2015/03/Unity-Logo-featured.png">www.ingame.de</a></li>
+                       <li>Kinect-Sensor Zugriff am 21.8.2015: <a href="https://i-msdn.sec.s-msft.com/dynimg/IC568992.png">https://i-msdn.sec.s-msft.com</a></li> 
+                        <li>ZigFu Logo Zugriff am 21.8.2015: <a href="http://zigfu.com/static/img/logo.png">www.zigfu.com</a></li>
                     </ul>
 				</section>
 			</div>

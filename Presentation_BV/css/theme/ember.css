@@ -168,20 +168,28 @@ border-radius: 25px;
   margin-top: 40px;
     color: #DAA520;
 }
-
+.subNormalList{
+    color: #FFFFE0;
+    margin-left: 40px !important;
+}
 .alternateList li{
     list-style: none;
     padding-top: 10px;
 }
 
-.subNormalList{
-    color: #FFFFE0;
-    margin-left: 40px !important;
+.compactList{
+    list-style: decimal;
+    font-size: 0.8em;
+    text-align: left;
 }
+
+
 .orange{
 color: #DAA520 !important;
 }
 .normalimage{
+    margin-top: 0px!important;
+    margin-bottom: 0px;
 border: none!important;
 background-color: transparent !important;
     box-shadow: none!important;
