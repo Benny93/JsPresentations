@@ -211,7 +211,7 @@ float: right;
 #circleBVStyle{
     
 margin: 0 auto;
-    margin-top: -24.5px;
+    margin-top: -24px;
     margin-bottom: 20px;
 }
 
@@ -219,7 +219,13 @@ margin: 0 auto;
 
     height: 1px;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f4eedf+50,f4eedf+50,f4eedf+50&amp;0+0,1+17,1+50,1+81,0+100 */
+border: none;
     width: 100%;    
-  border-color: #f4eedf;
+  background-color: #f4eedf;
     
+}
+
+.hugetext{
+font-size: 3em!important;
+    font-weight: bold!important;
 }
