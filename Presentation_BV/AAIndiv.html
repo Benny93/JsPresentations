@@ -384,7 +384,7 @@
 				<section>
 				<!--  section data-background="images/logos/logo_combined.png"-->
 						<h3 class="animated infinite pulse">Merci für's Zuhören.</h3>
-                    <h1>Quellen</h1>
+                    <h1>Bild-Quellen</h1>
                     <ul>
                         <li>Unity Logo Zugriff am 21.8.2015: <a href="http://programmybesplatno.com/wp-content/uploads/2014/04/Unity-3D-logo.jpg"> programmybesplatno.com</a> </li>
                         <li></li>
@@ -437,6 +437,37 @@
 			});
 
 		</script>
+        <!--Kinect-->
+        <script src='http://cdn.zigfu.com/zigjs/zig.min.js'> </script>
+        <script>
+           zig.embed();
+            console.log("Browser plugin installed: " + zig.pluginInstalled);
+            console.log("Browser plugin version: " + zig.pluginVersion);
+            console.log("Zig.js version: " + zig.version);
+            zig.addEventListener('statuschange', function() {
+	           console("Sensor connected: " + zig.sensorConnected);
+            });
+            
+            // SwipeDetector
+            var swipeDetector = zig.controls.SwipeDetector();
+            swipeDetector.addEventListener('swipeup', function(pd) {
+                console.log('SwipeDetector: Swipe Up');
+            });
+            swipeDetector.addEventListener('swipedown', function(pd) {
+                console.log('SwipeDetector: Swipe Down');
+            });
+            swipeDetector.addEventListener('swipeleft', function(pd) {
+                console.log('SwipeDetector: Swipe Left');
+            });
+            swipeDetector.addEventListener('swiperight', function(pd) {
+                console.log('SwipeDetector: Swipe Right');
+               // $(document).trigger({type: 'keydown', keyCode: 37});
+            });
+            swipeDetector.addEventListener('swipe', function(dir) {
+                console.log('SwipeDetector: Swipe direction: ' + dir);
+            });
+            zig.singleUserSession.addListener(swipeDetector);
+        </script>
 
 	</body>
 </html>
