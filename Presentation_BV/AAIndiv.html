@@ -363,8 +363,7 @@
                         <ul class="alternateList">
                             <li>Die Maske schneidet den Hintergrund mit aus</li>
                             <li>Abhängig von der Position des Nutzers</li>
-                        </ul>
-                        
+                        </ul>                        
                         <h1 style="margin-top: 20px;" class="orange">Lösung: Position der Aufnahme durch Verschieben und Skalieren optimiren</h1>
                         <h1>Verwende dazu CMAES</h1>
                     </section>
@@ -405,6 +404,29 @@
                             <li >Individualisierte Textur</li>
                             <li class="orange">Individualisierte Proportionen</li>
                             </ul>
+                    </section>
+                    <section>    
+                        <h3>Individualisierte Proportionen</h3>                         
+                        <h1 class="orange">Der Avatar soll Proprotionen wie der Nutzer haben</h1>
+                        <h1>Er soll an Armen und Beinen das gleiche Längenverhältnis haben</h1>
+                    </section>
+                    <section>
+                            <h3>Individualisierte Proportionen</h3>                         
+                            <h1>Nötige Schritte:</h1>
+                            <ul class="normalItemList">
+                                <li>Mit der Kinect das Skelett des Nutzers erfassen</li>
+                                <li>Die Verhältnisse von Armen und Beinen berechnen</li>
+                                <li>Den Avatar Skalieren bis er die selben Verhältnisse hat</li>                                                      
+                            </ul>                            
+                    </section>
+                    <section>
+                            <h3>Individualisierte Proportionen</h3>                         
+                            <h1>Umsetzung</h1>
+                            <ul class="alternateList">
+                                <li>Mit der Kinect werden Skelettdaten über 100 Updates gesammelt</li>
+                                <li>Die Skalierungsfaktoren des Avatars werden mit dem CMAES ermittelt</li>
+                                <li>Mit diesen Faktoren wird der Avatar an Armen und Beinen Skaliert</li>                                                      
+                            </ul>                            
                     </section>
                 </section> <!--End Proportions -->  
                 <section> <!--Fazit implementierung-->
