@@ -13,7 +13,10 @@
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
+  
+       
+        
+        
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
@@ -37,13 +40,7 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
-        <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-</script>
-<script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-        
+      
 		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/ember.css" id="theme">
@@ -301,18 +298,69 @@
                         <li>Individualisierte Textur</li>
                         <li>Individualisierte Proportionen</li>
                         </ul>
-                </section>
-                    
+                </section>                    
                     <section>
-                        <h2>Bewegung des Nutzers imitieren</h2>                      
-                      
+                        <h3>Bewegung des Nutzers imitieren</h3>                   
 						<h1>Nötige Schritte:</h1>
                         <ul class="normalItemList">
                         <li>Erfassen der Bewegung des Nutzers</li>
                         <li>Übertragen der Bewegung auf das Kinematische Skelett</li>                        
                         </ul>
                     </section>
-                
+                     <section>
+                        <h3>Bewegung des Nutzers imitieren</h3>                   
+						<h1>ZigFu besitzt bereits ZigSkeleton hierfür:</h1>
+                        <ul class="normalItemList">                        
+                        <li>Zuweisung für jedes Gelenk</li>
+                        <li>ZigFu Avatar vom Nutzer steuerbar</li>
+                        <li>Die Steuerung kann gespiegelt werden</li>
+                        </ul>
+                    </section>
+                    <section data-state="wavebad">
+                        <h3>Bewegung des Nutzers imitieren</h3>                   
+						<h1>ZigSkeleton Demo:</h1>
+                        <video id="videowavebad" height="400px" autoplay loop>
+                      <source data-src="video/WaveBad.mp4" type="video/mp4">                     
+                    Your browser does not support the video tag.
+                    </video>
+                    </section>
+                    <section>
+                        <h3>Bewegung des Nutzers imitieren</h3>                   
+						<h1>Klingt super aber:</h1>
+                        <ul class="alternateList"> 
+                        <li>Rotationsberechnung geht von T-Pose aus</li>
+                        <li class="orange">Funktioniert nicht korrekt mit MakeHuman Avataren!</li>
+                        <li>Kann nicht direkt übernommen werden</li>
+                        <li class="orange">Die Klasse ZigSkeleton muss angepasst werden!</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Bewegung des Nutzers imitieren</h3>                   
+						<h1>Anpassen der Klasse ZigSkeleton:</h1>
+                        <ul class="normalItemList">
+                            <li>Neue Klasse KinematicController</li>
+                            <li>Automatisierte erkennung des MakeHuman Skeletts</li>
+                            <li>Zu Beginn automatisch Avatar in T-Pose</li>
+                            <li>Spiegelung: Korrekte verrechnung der Rotationen</li>                           
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Bewegung des Nutzers imitieren</h3>                   
+						<h1>KinematicController:</h1>
+                        <ul class="normalItemList">
+                            <li>Skelett wird rekursiv erkannt und die Rollen verteilt</li>
+                            <li>T-Pose wird einmalig von Referenz-ZigFu-Avatar ausgelesen</li>                                                        
+                            <li>Für die Spiegelung werden die Rotationen umgerechnet</li>
+                        </ul>
+                    </section>
+                     <section data-state="wavesuper">
+                        <h3>Bewegung des Nutzers imitieren</h3>                   
+						<h1>KinematicController Demo:</h1>
+                        <video id="videowavesuper" height="400px" autoplay loop>
+                      <source data-src="video/WaveSuper.mp4" type="video/mp4">                     
+                    Your browser does not support the video tag.
+                    </video>
+                    </section>
                 </section>  <!--Ende Kinematik-->
                 
                 <section> <!--Textur-->
@@ -472,9 +520,7 @@
                                 <li>Maximal 200 Iterationen</li>
                                 <li></li>
                             </ul>                        
-                        </div>  
-                        When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+                        </div>                          
                     </section>                    
                      <section>
                         <h3>Individualisierte Proportionen</h3> 
@@ -638,6 +684,34 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
             });
             zig.singleUserSession.addListener(swipeDetector);
         </script>
-
+ <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+      <!--  <script>
+            //Event stuff   
+        Reveal.addEventListener( 'slidechanged', function( event ) {
+    // event.previousSlide, event.currentSlide, event.indexh, event.indexv
+            
+            } );
+        </script>-->
+        <script>
+        Reveal.addEventListener( 'wavesuper', function() {
+    // TODO: Sprinkle magic
+            console.log('spiele wavesuper ab');
+            var videowavesuper = document.getElementById("videowavesuper");
+            videowavesuper.play();
+            
+}, false );
+            Reveal.addEventListener( 'wavebad', function() {
+    // TODO: Sprinkle magic
+            console.log('spiele wavebad ab');
+            var videowavebad = document.getElementById("videowavebad");
+            videowavebad.play();       
+            
+}, false );
+        </script>
 	</body>
 </html>
