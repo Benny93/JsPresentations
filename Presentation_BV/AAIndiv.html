@@ -660,9 +660,27 @@
             console.log("Browser plugin installed: " + zig.pluginInstalled);
             console.log("Browser plugin version: " + zig.pluginVersion);
             console.log("Zig.js version: " + zig.version);
+             console.log("Sensor connected: " + zig.sensorConnected);
             zig.addEventListener('statuschange', function() {
-	           console("Sensor connected: " + zig.sensorConnected);
+	           console.log("Sensor connected: " + zig.sensorConnected);
             });
+            
+            // Method 1: specific event listeners
+            zig.addEventListener('userfound', function(user) {
+                console.log('Found user. ID: ' + user.id);
+            });
+            zig.addEventListener('userlost', function(user) {
+                console.log('Lost user. ID: ' + user.id);
+            });
+            
+            var engager = zig.EngageUsersWithSkeleton(1);
+            engager.addEventListener('userengaged', function(user) {
+                console.log('User engaged: ' + user.id);
+            });
+            engager.addEventListener('userdisengaged', function(user) {
+                console.log('User disengaged: ' + user.id);
+            });
+            zig.addListener(engager);
             
             // SwipeDetector
             var swipeDetector = zig.controls.SwipeDetector();
@@ -678,12 +696,15 @@
             swipeDetector.addEventListener('swiperight', function(pd) {
                 console.log('SwipeDetector: Swipe Right');
                // $(document).trigger({type: 'keydown', keyCode: 37});
+                Reveal.next();
             });
             swipeDetector.addEventListener('swipe', function(dir) {
                 console.log('SwipeDetector: Swipe direction: ' + dir);
             });
             zig.singleUserSession.addListener(swipeDetector);
         </script>
+        
+        
  <script type="text/x-mathjax-config">
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
