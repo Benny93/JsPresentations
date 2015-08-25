@@ -9,11 +9,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		
 		<meta name="description" content="info slides for the 3rd assignment for the Unity Praktikum in SS15">
-		<meta name="author" content="Johannes">
-
+		<meta name="author" content="Benny">
+        <!--
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  
+  -->
        
         
         
@@ -143,9 +143,7 @@
                         <hr class="horizontalRow" />
                         <div class="circleBV" id=circleBVStyle></div>
 						<ul class="alternateList">
-							<li class="orange"> Unity3d</li>
-
-							<li> MakeHuman </li>
+							<li class="orange"> Unity3d</li>							
                             <li> Kinect und ZigFu </li>
 							
 						</ul>
@@ -156,43 +154,18 @@
                         <ul class="normalItemList">
 							<li> Game-Engine</li>                            
 							<li> Multi-Plattform </li>
-                            <li>Einfache Steuerung von 3D Elementen</li>
+                            <li> Einfache Steuerung von 3D Elementen</li>
                             <li> Einfache Anbindung externer Hardware </li>							
 						</ul>
                     </section>
-                    <section>
+                    <section><!--MakeHuman-->
                     <img class="normalimage" width="1000px" src="images/unity/editor.png">
                     </section>
-				</section><!--Ende Technologien-->
-				
-                <section><!--MakeHuman-->
-                     <section>
-                        <h2>Theorie und Technologie</h2>
-                        <hr class="horizontalRow" />
-                        <div class="circleBV" id=circleBVStyle></div>
-						<ul class="alternateList">
-							<li > Unity3d</li>
-
-							<li class="orange" > MakeHuman </li>
-                            <li> Kinect und ZigFu </li>
-							
-						</ul>
-                    </section>
                     <section>
-                        <img class="normalimage floatrightinslide" height="100px" src="images/makehuman/mhlogo.png">
-                        <h2>MakeHuman</h2>
-                        <ul class="normalItemList">
-							<li>Modelling Software</li>                            
-							<li>Einfaches Designen von Avataren </li>
-                            <li>Automatisches Riggen</li>
-                            
-						</ul>
+                         <img class="normalimage" height="100px" src="images/makehuman/mhlogo.png">
+                        <img class="normalimage" width="800px" src="images/makehuman/editor.png">
                     </section>
-                    <section>
-                    <img class="normalimage" width="1000px" src="images/makehuman/editor.png">
-                    </section>
-                    
-                </section><!--MakeHuman-->
+				</section>                
                 
                 <section> <!--Kinect AND Zigfu-->
                         <section>
@@ -200,8 +173,7 @@
                         <hr class="horizontalRow" />
                         <div class="circleBV" id=circleBVStyle></div>
 						<ul class="alternateList">
-							<li > Unity3d</li>
-							<li > MakeHuman </li>
+							<li > Unity3d</li>							
                             <li class="orange"> Kinect und ZigFu </li>							
 						</ul>
                     </section>                    
@@ -211,55 +183,41 @@
                         <ul class="normalItemList">
 							<li>Optische Erfassung des Nutzers</li>                            
 							<li>Trackingdaten</li>
-                            <li>Anbindung nach Untiy</li>
-                            
+                            <li>Anbindung nach Unity</li>                            
 						</ul>
+                          <div style="margin-top:60px;">
+                        <img  class="normalimage" style="" width="800px"  src="images/kinectundzigfu/kinectAndZigfu.png" >
+                            </div>
                     </section>
-                    <section>
+                  <!--  <section>
                         <h2>ZigFu</h2>
                         <ul  class="alternateList">
 							<li class="orange">Verbindung Kinect zu Unity</li>                
 							                          
 						</ul>
-                        <div style="margin-top:60px;">
-                        <img  class="normalimage" style="" width="800px"  src="images/kinectundzigfu/kinectAndZigfu.png" >
+                       
+                    </section>-->
+                    
+                    <section>
+                        <h2>Kinect</h2>
+                        <div style="width: 800px;margin: 0 auto;">
+                        <div style="float:left;">                       
+                            <h1  class="orange"> RGB Farbstrom</h1>
+                            <img height="200px" class="normalimage" src="images/kinectundzigfu/RGBStream.png">                         
+                        </div>
+                        <div style="float:right;">
+                            <h1  class="orange">IR Tiefenstrom</h1>
+                            <img  height="200px" class="normalimage" src="images/kinectundzigfu/IRStream.png">               
+                            
+                        </div>
                             </div>
+                        <div style="clear:both;">  
+                            <h1 class="orange">Skelett-Datenstrom</h1>
+                            <img height="200px" class="normalimage" src="images/kinectundzigfu/SkelStreamExample.png">                 
+                        </div>                  
                     </section>
                     
-                    <section>
-                        <h2>Kinect</h2>
-                        <div>                       
-                            <img height="250px" class="normalimage imagewithtext" src="images/kinectundzigfu/RGBStream.png">
-                            <h1 style="margin-bottom: 0px;" class="orange"> RGB Farbstrom</h1>
-                              <ul class="alternateList">
-                                <li>640x480</li>
-                                <li>@30 FPS</li>                                
-                            </ul>
-                        </div>
-                        <div style="clear:both; padding-top: 35px;">
-                            <img  height="250px" class="normalimage imagewithtext" src="images/kinectundzigfu/IRStream.png">                      
-                            <h1 style="margin-bottom: 0px;" class="orange">IR Tiefenstrom</h1>
-                            <ul class="alternateList">
-                                <li>320x240</li>
-                                <li>@30 FPS</li>                                
-                            </ul>
-                        </div>
-                                                
-                    </section>
                     
-                    <section>
-                        <h2>Kinect</h2>
-                        <div>                       
-                            <img height="300px" class="normalimage imagewithtext" src="images/kinectundzigfu/SkelStreamExample.png">
-                            <h1 style="margin-bottom: 0px;" class="orange">Skelett-Datenstrom</h1>
-                              <ul class="alternateList">
-                                <li>20 Knochen</li>
-                                <li>bis zu 6 Spieler</li> 
-                                <li> Near Mode</li>                                  
-                            </ul>
-                        </div>
-                                                                    
-                    </section>
                 </section> <!--Kinect AND Zigfu-->
                 
                 <section>
@@ -268,11 +226,11 @@
                         <div class="circleBV" id=circleBVStyle></div>
 						<h1>Gundlage geschaffen für:</h1>
                         <ul class="normalItemList">
-                        <li class="fragment grow">Verarbeitung 3D Objekte</li>
-                        <li class="fragment grow">Erstellen und Riggen von Avataren</li>
-                        <li class="fragment grow">Tracking des Nutzers</li>
+                        <li>Verarbeitung 3D Objekte (Unity3D)</li>
+                        <li>Erstellen und Riggen von Avataren (MakeHuman)</li>
+                        <li>Tracking des Nutzers (Kinect und ZigFu)</li>
                         </ul>
-                    </section>  
+                    </section>  <!--Ende Technologien-->
                 <!--Herausforderung und Implementierung -->
                 <!--
                 <section>
@@ -300,59 +258,35 @@
                         </ul>
                 </section>                    
                     <section>
-                        <h3>Bewegung des Nutzers imitieren</h3>                   
-						<h1>Nötige Schritte:</h1>
+                        <h3>Bewegung des Nutzers imitieren</h3> 			
                         <ul class="normalItemList">
-                        <li>Erfassen der Bewegung des Nutzers</li>
-                        <li>Übertragen der Bewegung auf das Kinematische Skelett</li>                        
-                        </ul>
-                    </section>
-                     <section>
-                        <h3>Bewegung des Nutzers imitieren</h3>                   
-						<h1>ZigFu besitzt bereits ZigSkeleton hierfür:</h1>
-                        <ul class="normalItemList">                        
-                        <li>Zuweisung für jedes Gelenk</li>
-                        <li>ZigFu Avatar vom Nutzer steuerbar</li>
-                        <li>Die Steuerung kann gespiegelt werden</li>
+                        <li style="color: #ffffe0;list-style: none;">Kinect Skelett-Datenstrom liefert Gelenkorientierungen</li>
+                        <li class="orange" style="list-style:none;">Problem: Skelette stimmen nicht überein!
+                            <ul class="normalItemList"><li>Unterschiedliche Ausgangsposition</li>
+                                <li>Unterschiedliche Gelenkausrichtungen</li>
+                            </ul>
+                            </li> 
+                        
                         </ul>
                     </section>
                     <section data-state="wavebad">
                         <h3>Bewegung des Nutzers imitieren</h3>                   
-						<h1>ZigSkeleton Demo:</h1>
+						<h1>Skeletal mismatch</h1>
                         <video id="videowavebad" height="400px" autoplay loop>
                       <source data-src="video/WaveBad.mp4" type="video/mp4">                     
                     Your browser does not support the video tag.
                     </video>
                     </section>
+                    
                     <section>
                         <h3>Bewegung des Nutzers imitieren</h3>                   
-						<h1>Klingt super aber:</h1>
-                        <ul class="alternateList"> 
-                        <li>Rotationsberechnung geht von T-Pose aus</li>
-                        <li class="orange">Funktioniert nicht korrekt mit MakeHuman Avataren!</li>
-                        <li>Kann nicht direkt übernommen werden</li>
-                        <li class="orange">Die Klasse ZigSkeleton muss angepasst werden!</li>
+						<h1>Lösung:</h1>
+                        <ul class="normalItemList">                         
+                            <li>Avatar initial in T-Pose</li>
+                            <li>Negieren der Y- und Z-Achse</li>                           
                         </ul>
                     </section>
-                    <section>
-                        <h3>Bewegung des Nutzers imitieren</h3>                   
-						<h1>Anpassen der Klasse ZigSkeleton:</h1>
-                        <ul class="normalItemList">
-                            <li>Neue Klasse KinematicController</li>
-                            <li>Automatisierte erkennung des MakeHuman Skeletts</li>
-                            <li>Zu Beginn automatisch Avatar in T-Pose</li>
-                            <li>Spiegelung: Korrekte verrechnung der Rotationen</li>                           
-                        </ul>
-                    </section>
-                    <section>
-                        <h3>Bewegung des Nutzers imitieren</h3>                   
-						<h1>KinematicController:</h1>
-                        <ul class="normalItemList">
-                            <li>Skelett wird rekursiv erkannt und die Rollen verteilt</li>
-                            <li>T-Pose wird einmalig von Referenz-ZigFu-Avatar ausgelesen</li>                                                        
-                            <li>Für die Spiegelung werden die Rotationen umgerechnet</li>
-                        </ul>
-                    </section>
+                    
                      <section data-state="wavesuper">
                         <h3>Bewegung des Nutzers imitieren</h3>                   
 						<h1>KinematicController Demo:</h1>
@@ -378,18 +312,14 @@
                     <section>
                             <h3>Individualisierte Textur</h3>
                             <h1 class="orange">Der Avatar soll dem Nutzer ähnlich sehen.</h1>
-                            <h1>Er soll am Oberkörper das gleiche Kleidungsstück tragen.</h1>
-                    </section>
-                    <section>
-                            <h3>Individualisierte Textur</h3>
-                            <h1>Nötige Schritte:</h1>
-                            <ul class="normalItemList">
+                            <h1>Er soll am Oberkörper das gleiche Kleidungsstück tragen:</h1>
+                        <ul class="normalItemList">
                             <li>Mit der Kinect eine Aufnahme des Nutzers machen</li>
                                 <li>Ausschnitt dieser Aufnahme wählen</li>
                                 <li>Diesen auf dem Oberkörper des Avatars anzeigen</li>                        
                             </ul>
-                            
                     </section>
+                    
                     <section>
                             <h3>Individualisierte Textur</h3>
                             <h1 class="orange">Vorbereitung</h1>
@@ -410,7 +340,7 @@
                         <h1 class="orange">Aufnahme mit der Kinect</h1>
                         <ul class="normalItemList">
                             <li>Über RGB-Farbstrom Bild aufnehmen</li>
-                            <li>Über Teifeninformation Hintergrund entfernen</li> 
+                            <li>Über Tiefeninformation Hintergrund entfernen</li> 
                             <li>Als neue Textur für den Oberkörper-Mesh speichern</li>
                         </ul>
                         <div style="margin-top:20px;">
@@ -434,6 +364,7 @@
                         <img height="500px" class="normalimage" src="images/AAindiv/flowcharttex.svg">                            
                         </div>
                     </section>
+                    <!--
                     <section>
                         <h3>Individualisierte Textur</h3>
                         <h1>CMAES Optimierung</h1>
@@ -446,6 +377,7 @@
                             </ul>
                         </div>    
                     </section>
+                    -->
                     <section>
                         <h3>Individualisierte Textur</h3>
                         <h1 class="orange">Ergebnis CMAES</h1>
@@ -473,35 +405,15 @@
                             </ul>
                     </section>
                     <section>    
-                        <h3>Individualisierte Proportionen</h3>                         
-                        <h1 class="orange">Der Avatar soll Proprotionen wie der Nutzer haben</h1>
-                        <h1>Er soll an Armen und Beinen das gleiche Längenverhältnis haben</h1>
-                    </section>
-                    <section>
-                            <h3>Individualisierte Proportionen</h3>                         
-                            <h1>Nötige Schritte:</h1>
-                            <ul class="normalItemList">
+                        <h3>Individualisierte Proportionen</h3>                                                 
+                        <h1>Der Avatar soll an Armen und Beinen das gleiche Längenverhältnis haben:</h1>
+                        <ul class="normalItemList">
                                 <li>Mit der Kinect das Skelett des Nutzers erfassen</li>
                                 <li>Die Verhältnisse von Armen und Beinen berechnen</li>
-                                <li>Den Avatar Skalieren bis er die selben Verhältnisse hat</li>                                                      
-                            </ul>                            
-                    </section>
-                    <section>
-                            <h3>Individualisierte Proportionen</h3>                         
-                            
-                        <h1>Umsetzung</h1>
-                        <div style="float:left;width:600px;">
-                        <ul class="normalItemList">
-                                <li>Mit der Kinect werden Skelettdaten über 100 Updates gesammelt</li>
-                                <li>Die Skalierungsfaktoren des Avatars werden mit dem CMAES ermittelt</li>
-                                <li>Mit diesen Faktoren wird der Avatar an Armen und Beinen Skaliert</li>                                                   
+                                <li>Den Avatar Skalieren bis er die selben Verhältnisse hat</li>
+                                <li>Richtige Skalierung finden: Optimierungsproblem</li>
                             </ul>  
-                        </div>    
-                        <div style="float:right;" >
-                        <h1 >Ausgangssituation</h1>
-                        <img height="400px" class="normalimage" src="images/AAindiv/ScaleBefore.png">
-                        </div>
-                    </section>
+                    </section> 
                     <section>
                         <h3>Individualisierte Proportionen</h3> 
                         <h2>Ablauf</h2>                        
@@ -510,27 +422,53 @@
                         </div>
                     </section>
                     <section>
+                            <h3>Individualisierte Proportionen</h3>                         
+                            
+                        <h1>Umsetzung</h1>
+                        <div style="float:left;">
+                        <ul class="normalItemList">
+                                <li>Mit der Kinect werden Skelettdaten über 100 Updates gesammelt</li>
+                                <li>Die Skalierungsfaktoren des Avatars werden mit dem CMAES ermittelt</li>
+                                <li>Mit diesen Faktoren wird der Avatar an Armen und Beinen Skaliert</li>                                                   
+                            </ul>  
+                        </div>    
+                       
+                    </section>
+                    <!--
+                    <section>
                         <h3>Individualisierte Proportionen</h3>
                         <h1>CMAES Optimierung</h1>
                         <div>
-                        <img style="float:left; " src="images/AAindiv/cmaesonscale.png" height="400px" class="normalimage">
+                            
+                            <img style="float:left; " src="images/AAindiv/cmaesonscale.png" height="400px" class="normalimage">
                          <h1 style="margin-bottom: 0px;" class="orange">CMAES</h1>
                             <ul class="alternateList">
                                 <li > 4 Parameter für 4 Gelenke</li>
                                 <li>Maximal 200 Iterationen</li>
-                                <li></li>
-                            </ul>                        
+                                <li>
+                                
+                                </li>
+                            </ul> 
+                            When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
                         </div>                          
-                    </section>                    
+                    </section> -->                   
                      <section>
                         <h3>Individualisierte Proportionen</h3> 
-                        <h1 class="orange">Ergebnis CMAES</h1>
+                        <h1 >Ergebnis CMAES</h1>
                         <ul class="normalItemList">
                             <li>Verhältnisse im Vergleich sehr ähnlich</li>               
                             <li>Individuelle Proportionen erstellt</li>
                         </ul>
-                        <div style="margin-top:20px;">
-                            <img height="400px" class="normalimage" src="images/AAindiv/ScaleAfter.png">
+                         <div style="margin-top: 40px;">
+                          <div style="float:left;" >
+                        <h1 >Ausgangssituation</h1>
+                        <img height="350px" class="normalimage" src="images/AAindiv/ScaleBefore.png">
+                        </div>
+                        <div >
+                            <h1>Ergebnis der Skalierung</h1>
+                            <img height="350px" class="normalimage" src="images/AAindiv/ScaleAfter.png">
+                        </div>
                         </div>
                     </section>
                     
@@ -542,9 +480,9 @@
                             <div class="circleBV" id=circleBVStyle></div>
                             <h1>Umgesetzte Funktionen:</h1>
                             <ul class="normalItemList">
-                            <li class="fragment grow" >Kinematik des Avatars</li>
-                            <li class="fragment grow">Individualisierte Textur Oberkörper-Mesh</li>
-                            <li class="fragment grow" >Individualisierte Proportionen Arme und Beine</li>
+                            <li>Kinematik des Avatars</li>
+                            <li>Individualisierte Textur Oberkörper-Mesh</li>
+                            <li>Individualisierte Proportionen Arme und Beine</li>
                             </ul>  
                 </section> <!--Fazit implementierung-->
                 
@@ -561,7 +499,8 @@
                             <ul class="normalItemList">
                             <li >Kinect erfasst keine Details</li>
                             <li >Skalierung lässt nur geringe proportionen Anpassung zu</li>
-                            <li >Nur Textur für Forderseite</li>
+                            <li >Nur Textur für Vorderseite</li>
+                            <li>UV-Mapping nur von Hand einstellbar</li>
                             </ul> 
                         </section> 
                     <section>
@@ -573,6 +512,7 @@
                             <li >Einfach und schnell</li>
                             <li >Avatar kann animiert werden</li>
                             <li >Lässt sich beliebig erweitern</li>
+                                
                             </ul>                         
                     </section>
                 <!--End Fazit -->
@@ -581,14 +521,14 @@
                             <hr class="horizontalRow" />
                             <div class="circleBV" id=circleBVStyle></div>                            
                             <ul class="normalItemList">                            
-                            <li >Kann zur Grundlage vieler VR-Anwendungen werden</li>
-                            <li >Bessere Technik kann bessere Ergebnisse hervorbringen</li>
-                            <li >Weiter verfolgen!</li>    
+                            <li>Leichter Export ermöglich import in andere Unity Projekte</li>                            
+                            <li>Höhere Sensorauflösung für Anpassung Hände und Gesicht</li>
+                            <li>Statt Skalierung 3D-Scan und automatisches Rigging?</li>    
                             </ul>                         
                     </section>
 				<section>
 				<!--  section data-background="images/logos/logo_combined.png"-->
-						<h3 class="animated infinite pulse">Merci für's Zuhören.</h3>
+						<h3 >Vielen Dank für's Zuhören.</h3>
                     <h1 style="margin-top:20px;">Bild-Quellen</h1>
                     <ul class="compactList">
                         
@@ -629,11 +569,11 @@
              
                 
 				
-				leap: {
-					naturalSwipe   : false,    // Invert swipe gestures
-					pointerOpacity : 0.5,      // Set pointer opacity to 0.5
-					pointerColor   : '#d80000' // Red pointer
-				},
+				//leap: {
+				//	naturalSwipe   : false,    // Invert swipe gestures
+				//	pointerOpacity : 0.5,      // Set pointer opacity to 0.5
+				//	pointerColor   : '#d80000' // Red pointer
+				//},
                 
                
 
@@ -644,14 +584,18 @@
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/leap/leap.js', async: true }
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }//,
+				//	{ src: 'plugin/leap/leap.js', async: true }
                     
 				]
                 
                 
 			});
 
+            Reveal.addEventListener( 'slidechanged', function( event ) {
+                MathJax.Hub.Rerender();
+            } );
+            
 		</script>
         <!--Kinect-->
         <script src='http://cdn.zigfu.com/zigjs/zig.min.js'> </script>
