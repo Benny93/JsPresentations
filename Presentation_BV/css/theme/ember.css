@@ -233,3 +233,17 @@ border: none;
     
 }
 
+#mycursor {
+	position: absolute!important;
+	display : none;
+	width : 40px;
+	height : 40px;
+	background-color : red;
+    border-radius: 50%;
+    z-index: 99999;
+    overflow: visible !important;
+}
+ 
+#mycursor.pushed {
+	background-color: blue;
+}
