@@ -104,11 +104,11 @@
 				
                     
                     <section>
-                        <h2 style="font-style: oblique; ">Warum individualisierte Avatare?</h2>
+                        <h2 style="font-style: oblique; ">Warum automatisch individualisierte Avatare?</h2>
                         <ul class="normalItemList">
                             <li>Virtual Reality im Trend!</li>                            
-                            <li>Avatare verbessern Interaktion (Integration)</li>
-                            <li>Immersiveres Erleben</li>                            
+                            <li>Avatare verbessern Interaktion (Integration)!</li>
+                            <li>Immersiveres Erleben!</li>                            
                             <li>Einfach und ohne großen Aufwand!</li>
                             
                         </ul>
@@ -120,22 +120,17 @@
 						<hr class="horizontalRow" />
                         <div class="circleBV" id=circleBVStyle></div>
 						<ul class="normalItemList">
-							<li> Theorie und Technologie
-                               <!--
-                                <ul class="subNormalList">
-                                    <li>Unity3D</li>
-                                    <li>MakeHuman</li>
-                                    <li>Kinect</li>                                    
-                                    </ul>-->
-                            </li>
-
-							<li> Herausforderung und Implementierung </li>
                             <li> Live Demo </li>
+							<li> Eingesetzte Technologie</li>
+							<li> Herausforderung und Implementierung </li>                            
 							<li> Fazit </li>
 						</ul>
 						
 						<!--End Gliederung-->
 				    	
+                </section>
+                <section>
+                    <h4 class="animated infinite pulse" style="font-size: 3em;">Live Demo</h4>
                 </section>
 				<section>	
                     <section>
@@ -322,7 +317,7 @@
                     
                     <section>
                             <h3>Individualisierte Textur</h3>
-                            <h1 class="orange">Vorbereitung</h1>
+                            <h1 >Vorbereitung</h1>
                             <h1 class="orange">Anpassen den UV-Mappings</h1>
                             <!--Bilder von original -->
                         <div style="height: 200px;float:left;">
@@ -337,11 +332,20 @@
                     </section> 
                     <section>
                         <h3>Individualisierte Textur</h3>
-                        <h1 class="orange">Aufnahme mit der Kinect</h1>
+                        <h1>Aufnahme mit der Kinect</h1>
+                        <!--
                         <ul class="normalItemList">
                             <li>Über RGB-Farbstrom Bild aufnehmen</li>
                             <li>Über Tiefeninformation Hintergrund entfernen</li> 
                             <li>Als neue Textur für den Oberkörper-Mesh speichern</li>
+                        </ul> -->
+                         <ul class="normalItemList">
+                        <li class="orange" style="list-style:none;">Problem: Schwarze Ränder sichtbar
+                            <ul class="normalItemList">
+                                <li>Die Maske schneidet den Hintergrund mit aus</li>
+                                <li>Abhängig von der Position des Nutzersn</li>
+                            </ul>
+                            </li>                         
                         </ul>
                         <div style="margin-top:20px;">
                             <img height="300px" class="normalimage" src="images/AAindiv/texbefore4.png">
@@ -349,21 +353,30 @@
                     </section> 
                     <section>
                         <h3>Individualisierte Textur</h3>
-                        <h1 class="orange">Problem: Schwarze Ränder sichtbar</h1>
-                        <ul class="alternateList">
-                            <li>Die Maske schneidet den Hintergrund mit aus</li>
-                            <li>Abhängig von der Position des Nutzers</li>
-                        </ul>                        
-                        <h1 style="margin-top: 20px;" class="orange">Lösung: Position des Nutzers durch Verschieben und Skalieren optimieren</h1>
-                        <h1>Verwende dazu CMAES</h1>
+                       <!--
+                        <ul class="normalItemList">
+                        <li class="orange" style="list-style:none;">Problem: Schwarze Ränder sichtbar
+                            <ul class="normalItemList">
+                                <li>Die Maske schneidet den Hintergrund mit aus</li>
+                                <li>Abhängig von der Position des Nutzersn</li>
+                            </ul>
+                            </li>                         
+                        </ul>
+                            -->
+                        <h1 style="margin-top: 20px;">Lösung: </h1>
+                        <ul class="normalItemList">
+                        <li>Position des Nutzers durch Verschieben und Skalieren optimieren</li>   
+                        <li>Richtige Skalierung und Verschiebung finden: <b style="color:#ffffe0;"> Optimierungsproblem</b></li>
+                        </ul>
                     </section>
+                    <!--
                     <section>
                         <h3>Individualisierte Textur</h3>
                         <h2>Ablauf</h2>
                         <div>                            
                         <img height="500px" class="normalimage" src="images/AAindiv/flowcharttex.svg">                            
                         </div>
-                    </section>
+                    </section>-->
                     <!--
                     <section>
                         <h3>Individualisierte Textur</h3>
@@ -380,7 +393,7 @@
                     -->
                     <section>
                         <h3>Individualisierte Textur</h3>
-                        <h1 class="orange">Ergebnis CMAES</h1>
+                        <h1 >Ergebnis Optimierung</h1>
                         <ul class="normalItemList">
                             <li>Kaum noch sichtbare schwarze Ränder</li>
                             <li>Textur wird fertig auf dem Avatar angezeigt</li> 
@@ -408,19 +421,19 @@
                         <h3>Individualisierte Proportionen</h3>                                                 
                         <h1>Der Avatar soll an Armen und Beinen das gleiche Längenverhältnis haben:</h1>
                         <ul class="normalItemList">
-                                <li>Mit der Kinect das Skelett des Nutzers erfassen</li>
-                                <li>Die Verhältnisse von Armen und Beinen berechnen</li>
+                                <li>Mit der Kinect das Skelett des Nutzers erfassen</li>              
                                 <li>Den Avatar Skalieren bis er die gleichen Verhältnisse hat</li>
-                                <li>Richtige Skalierung finden: Optimierungsproblem</li>
+                                <li>Richtige Skalierung finden: <b style="color:#ffffe0;"> Optimierungsproblem</b></li>
                             </ul>  
                     </section> 
+                    <!--
                     <section>
                         <h3>Individualisierte Proportionen</h3> 
                         <h2>Ablauf</h2>                        
                         <div>                            
                         <img height="500px" class="normalimage" src="images/AAindiv/flowchartprop.svg">                            
                         </div>
-                    </section>
+                    </section> -->
                     <section>
                             <h3>Individualisierte Proportionen</h3>                         
                             
@@ -428,8 +441,8 @@
                         <div style="float:left;">
                         <ul class="normalItemList">
                                 <li>Mit der Kinect werden Skelettdaten über 100 Updates gesammelt</li>
-                                <li>Die Skalierungsfaktoren des Avatars werden mit dem CMAES ermittelt</li>
-                                <li>Mit diesen Faktoren wird der Avatar an Armen und Beinen Skaliert</li>                                                   
+                                <li>Die Skalierungsfaktoren des Avatars werden optimiert</li>
+                                <li>Mit diesen Faktoren wird der Avatar an Armen und Beinen skaliert</li>                                                   
                             </ul>  
                         </div>    
                        
@@ -455,7 +468,7 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
                     </section> -->                   
                      <section>
                         <h3>Individualisierte Proportionen</h3> 
-                        <h1 >Ergebnis CMAES</h1>
+                        <h1 >Ergebnis Optimierung</h1>
                         <ul class="normalItemList">
                             <li>Verhältnisse im Vergleich sehr ähnlich</li>               
                             <li>Individuelle Proportionen erstellt</li>
@@ -486,9 +499,7 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
                             </ul>  
                 </section> <!--Fazit implementierung-->
                 
-                <section>
-                    <h4 class="animated infinite pulse" style="font-size: 3em;">Live Demo</h4>
-                </section>
+                
                 
                  <!--Fazit -->
                     <section>
@@ -554,7 +565,7 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				controls: true,
-				progress: true,
+				progress: false,
 				history: true,
 				center: true,
 
